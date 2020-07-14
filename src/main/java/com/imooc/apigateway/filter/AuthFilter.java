@@ -40,6 +40,7 @@ public class AuthFilter extends ZuulFilter {
     public Object run() throws ZuulException {
         RequestContext requestContext = RequestContext.getCurrentContext();
         HttpServletRequest request = requestContext.getRequest();
+        System.out.println(11111);
         /**
          * /order/create 买
          * /order/finish 卖
